@@ -5,13 +5,16 @@
         <DefineConstants>FABLE_COMPILER</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="index.html"/>
-        <None Include="paket.references"/>
-        <Compile Include="Index.fs"/>
-        <Compile Include="App.fs"/>
+        <None Include="index.html" />
+        <None Include="paket.references" />
+        <Compile Include="Index.fs" />
+        <Compile Include="App.fs" />
+        <Content Include="app.css">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Shared\Shared.fsproj"/>
+        <ProjectReference Include="..\Shared\Shared.fsproj" />
     </ItemGroup>
-    <Import Project="..\..\.paket\Paket.Restore.targets"/>
+    <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
