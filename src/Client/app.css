@@ -1,0 +1,26 @@
+﻿html, body {
+    overflow: hidden;
+    height: 100%;
+}
+#elmish-app, .root {
+    height: 100%;
+}
+
+.master-detail-container {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+.master {
+    height: 100%;
+    flex-grow: 1;
+}
+.master-item {
+    cursor: pointer;
+}
+.master-lastItem {
+    height: 100vh;
+}
+.detail {
+    flex-grow: 4;
+}
